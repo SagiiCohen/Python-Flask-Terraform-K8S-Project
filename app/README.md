@@ -1,6 +1,3 @@
-"
-# Flask Bookstore API
-
 ## Description
 
 This Flask application serves as a simple RESTful API for managing a bookstore. It allows users to perform CRD operations (Create, Read, Delete) on a collection of books.
@@ -46,4 +43,4 @@ Before running the application, ensure you have the following installed:
    - **DELETE Book**:
      Replace `<book_id>` with the ID of the book to delete:
      ```bash
-     curl -X DELETE /api/books/<book_id>" 
+     curl -X DELETE /api/books/<book_id>

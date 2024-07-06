@@ -1,5 +1,3 @@
-"# Docker Setup for Flask Bookstore API
-
 ## Overview
 
 This Dockerfile defines the environment and configuration for containerizing the Flask Bookstore API application.
@@ -78,4 +76,4 @@ After building the Docker image, run the container using the following command:
 docker run -p 5000:5000 flask-bookstore-api
 ```
 
-This command maps port 5000 of the container to port 5000 on your local machine, allowing you to access the Flask application at `http://localhost:5000`." 
+This command maps port 5000 of the container to port 5000 on your local machine, allowing you to access the Flask application at `http://localhost:5000`.

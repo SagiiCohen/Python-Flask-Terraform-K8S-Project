@@ -9,7 +9,7 @@ This repository contains a Python Flask application for managing a book shop via
 The Barkuni Books Shop API allows you to perform CRUD operations on books. Here are the available endpoints:
 
 - **GET /api/books**: Retrieve a list of all books.
-- **POST /api/books**: Add a new book. Requires JSON payload with `name` and `author` fields.
+- **POST /api/books**: Add a new book. Requires JSON payload with `title` and `author` fields.
 - **DELETE /api/books/{book_id}**: Delete a book by specifying its ID.
 
 ## Running on Amazon EKS
@@ -18,7 +18,7 @@ The application is deployed and managed on an Amazon EKS cluster for scalability
 
 ### Prerequisites
 
-- An AWS account with necessary permissions to create and manage EKS clusters.
+- An AWS account with the necessary permissions to create and manage EKS clusters.
 - kubectl installed locally to interact with the EKS cluster.
 
 ### Deploying the Application
@@ -76,12 +76,12 @@ curl http://localhost:5000/api/books
 
 ### Add a New Book
 
-To add a new book, send a POST request to `/api/books` with JSON payload containing `name` and `author`.
+To add a new book, send a POST request to `/api/books` with JSON payload containing `title` and `author`.
 
 Example:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"name": "Book Name", "author": "Author Name"}' http://localhost:5000/api/books
+curl -X POST -H "Content-Type: application/json" -d '{"title": "Book Name", "author": "Author Name"}' http://localhost:5000/api/books
 ```
 
 ### Delete a Book

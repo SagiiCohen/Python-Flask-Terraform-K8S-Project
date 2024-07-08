@@ -1,0 +1,16 @@
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: barkuni-books-shop-app-service
+    labels:
+      name: barkuni-books-shop-app-service
+      app: barkuni-books-shop
+  spec:
+    type: LoadBalancer
+    selector:
+      name: barkuni-books-shop-app
+      app: barkuni-books-shop
+    ports:
+      - protocol: TCP
+        port: 80    
+        targetPort: 5000

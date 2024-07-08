@@ -1,0 +1,25 @@
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: barkuni-books-shop-app-deploy
+    labels:
+      name: barkuni-books-shop-app-deploy
+      app: barkuni-books-shop
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        name: barkuni-books-shop-app
+        app: barkuni-books-shop     
+    template:
+      metadata:
+        name: barkuni-books-shop-app
+        labels:
+          name: barkuni-books-shop-app
+          app: barkuni-books-shop
+      spec:
+        containers:
+        - name: barkuni-books-shop-app
+          image: sagicohen8/barkuni-books-shop-app:latest
+          ports:
+              - containerPort: 5000

@@ -11,4 +11,4 @@
 			min_size          = 1
 			devopsARN = "arn:aws:iam::058264138725:user/devops"
 			clusterAccessPolicy = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
-AccessEntityClusterPolicyType = "cluster"
+			AccessEntityClusterPolicyType = "cluster"
